@@ -1,8 +1,12 @@
 # Info
 
-All screenshots are on the Billie environment with all of the env being removed except for `BigSmokePS` to show whether or not the material will be "corrupted" on the envs that do that to geo.
-
 Anytime I mention "directional lights" I'm referring to the `DirectionalLight` game objects in the env. (Ex: `DirectionalLightFront`, `DirectionalLightBack`, `DirectionalLightLeft`, and `DirectionalLightRight`) 
+
+All screenshots are on the Billie environment with all of the env being removed, except for `BigSmokePS`, to show whether or not the material will be "corrupted" on the envs that do that to geo.
+
+The environments I know of that "corrupt" some materials are Billie & Interscope.
+These materials will be still "corrupted" if these environments are loaded *before* playing the map even if the environment you use is not one of them.
+
 
 Example of what I'm calling "corrupted": 
 ```
@@ -24,7 +28,7 @@ const map = new Difficulty("ExpertPlusLawless.dat", "ExpertPlusStandard.dat");
 ```
 You can change it to whatever you want but the `map` in the material code will have to match whatever you chose for your output difficulty.
 
-If a material does have `color:` set, then it cannot be colored by the material. However, it still could be colored by the lightmap, directional lights
+If a material does not have `color:` set, then it cannot be colored by the material. However, it still could be colored by the lightmap, directional lights, or by lighting the geo itself, if supported.
 
 # Material List
 
