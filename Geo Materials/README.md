@@ -120,7 +120,9 @@ components.BloomFogEnvironment = {
   offset: 0,
   startY: -0.25,
   height: 0
-}```
+}
+```
+
 ![Fog Image](foglight.png)
 
 ## Grid Material
