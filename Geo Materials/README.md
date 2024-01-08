@@ -69,6 +69,8 @@ Unlit:
 ![Unlit Image](unlitlights.png)
 Lit:
 ![Unlit Image](litlights.png)
+Lit, but lights are set to [0,0,0,0]:
+![Unlit Image](blacklights.png)
 
 
 Material on the left:
