@@ -45,7 +45,7 @@ If a material does not have the `color:` set, then it cannot be colored by the m
 [Invisible](README.md#invisible-material)
 
 ## Fixed Concrete Material
-
+Tries to match the default `InterscopeConcrete` shader as much as possible, but without a light map to remove the "corruption". This way of doing it also removes the ability to color the material, but I might try to find a way to fix that later.
 Material on the Right:
 ```typescript
 map.geoMaterials["FixedConcrete"] = {
@@ -61,6 +61,7 @@ map.geoMaterials["DefaultConcrete"] = {
 }
 ```
 
+Comparison:
 ![Concrete Comparison Image](concomp.png)
 
 ## Wood/Stone Material
