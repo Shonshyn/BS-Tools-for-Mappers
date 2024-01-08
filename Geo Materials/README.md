@@ -27,6 +27,8 @@ If a material does not have `color` set, then it cannot be colored by the materi
 ### "Corruption"
 The environments I know of currently that "corrupt" some materials are Billie & Interscope.
 
+I believe the corruption is caused by the light maps in some materials, as removing the lightmap or changing lightmaps fixes this problem. I could be wrong on this though.
+
 These materials will be corrupted if these environments are in use, or even loaded *before* playing the map even if the environment you use is not one of them. So, it is best to not use them.
 
 Example of what I'm calling "corrupted": 
