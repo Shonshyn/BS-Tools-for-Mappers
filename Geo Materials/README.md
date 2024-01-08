@@ -10,8 +10,6 @@
 
 *These materials will be "corrupted" if these environments are in use, or even loaded *before* playing the map even if the environment you use is not one of them. So, it is best to not use them.
 
-###"Corruption"
-
 Example of what I'm calling "corrupted": 
 ```typescript
 map.geoMaterials["DefaultConcrete"] = {
