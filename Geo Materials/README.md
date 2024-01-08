@@ -61,5 +61,6 @@ map.geoMaterials["CrystalMat"] = {
 ```
 Unlit:
 ![Crystal Image](crystal.png)
+![Crystal Image](crystalunlit.png)
 Lit:
 ![Crystal Lit](crystallit.png)
