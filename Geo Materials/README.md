@@ -10,7 +10,7 @@ These materials will be still "corrupted" if these environments are loaded *befo
 
 
 Example of what I'm calling "corrupted": 
-```
+```typescript
 map.geoMaterials["DefaultConcrete"] = {
   shader: "InterscopeConcrete",
   color: [1,1,1,1]
@@ -46,7 +46,7 @@ map.geoMaterials["WoodMat"] = {
 ![Stone/Rock](stone%20rock.png)
 
 ## Crystal/Glass Material
-```
+```typescript
 map.geoMaterials["CrystalMat"] = {
   shader: "TransparentLight",
   shaderKeywords: [
