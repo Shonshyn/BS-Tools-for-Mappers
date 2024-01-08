@@ -1,6 +1,10 @@
 # Info
 
-All screenshots are on the Billie environment to show whether or not the material will be "corrupted" on the environments that do that to geo.
+All screenshots are on the Billie environment with all of the environment being removed except for `BigSmokePS` to show whether or not the material will be "corrupted" on the environments that do that to geo.
+
+If a screenshot has any other environment pieces, it was done to show a certain type of effect that the material will have. For example, some shader keywords will cause any smoke to not be visible from behind the geo. In these cases, I likely put clouds on, or something else to better demonstrate that.
+
+All screenshots also have the environment fog unchanged from default unless specified otherwise.
 
 All code snippets will have `map` set the output difficulty. Here's an example of that, with `ExpertPlusLawless.dat` being the input and `ExpertPlusStandard.dat` being the output:
 ```
