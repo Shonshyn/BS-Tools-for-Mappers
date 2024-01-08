@@ -50,18 +50,20 @@ Tries to match the default `InterscopeConcrete` shader as much as possible, but 
 Comparison:
 ![Concrete Comparison Image](concomp.png)
 
-Material on the Right:
-```typescript
-map.geoMaterials["FixedConcrete"] = {
-  shader: "InterscopeConcrete",
-  shaderKeywords: ["DIRT", "ENABLE_DIFFUSE", "ENABLE_DIRT", "ENABLE_DIRT_DETAIL", "ENABLE_FOG", "ENABLE_GROUND_FADE", "ENABLE_SPECULAR", "ENABLE_VERTEXT_COLOR", "FOG", "NOISE_DITHERING", "REFLECTION_PROBE", "REFLECTION_PROBE_BOX_PROJECTION", "REFLECTION_PROBE_BOX_PROJECTION_OFFSET", "_EMISSION", "_ENABLE_FOG_TINT", "_RIMLIGHT_NONE"]
-}
-```
+
 Material on the left:
 ```typescript
 map.geoMaterials["DefaultConcrete"] = {
   shader: "InterscopeConcrete",
   color: [0, 1, 0, 1]
+}
+```
+
+Material on the Right:
+```typescript
+map.geoMaterials["FixedConcrete"] = {
+  shader: "InterscopeConcrete",
+  shaderKeywords: ["DIRT", "ENABLE_DIFFUSE", "ENABLE_DIRT", "ENABLE_DIRT_DETAIL", "ENABLE_FOG", "ENABLE_GROUND_FADE", "ENABLE_SPECULAR", "ENABLE_VERTEXT_COLOR", "FOG", "NOISE_DITHERING", "REFLECTION_PROBE", "REFLECTION_PROBE_BOX_PROJECTION", "REFLECTION_PROBE_BOX_PROJECTION_OFFSET", "_EMISSION", "_ENABLE_FOG_TINT", "_RIMLIGHT_NONE"]
 }
 ```
 
