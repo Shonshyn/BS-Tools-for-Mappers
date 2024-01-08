@@ -1,15 +1,16 @@
 # Info
 
-Anytime I mention "directional lights" I'm referring to the `DirectionalLight` game objects in the env. (Ex: `DirectionalLightFront`, `DirectionalLightBack`, `DirectionalLightLeft`, and `DirectionalLightRight`) 
+*Anytime I mention "directional lights" I'm referring to the `DirectionalLight` game objects in the env. (Ex: `DirectionalLightFront`, `DirectionalLightBack`, `DirectionalLightLeft`, and `DirectionalLightRight`) 
 
-All screenshots are on the Billie environment with all of the env being removed, except for `BigSmokePS`, to show whether or not the material will be "corrupted" on the envs that do that to geo.
+*All screenshots are on the Billie environment with all of the env being removed, except for `BigSmokePS`, to show whether or not the material will be "corrupted" on the envs that do that to geo.
 
-In any screenshots with the background colored, every light for the env was set to either red or blue and the lights for geo was set to green to show how the lightmaps/reflection probes would affect the material.
+*In any screenshots with the background colored, every light for the env was set to either red or blue and the lights for geo was set to green to show how the lightmaps/reflection probes would affect the material.
 
-The environments I know of currently that "corrupt" some materials are Billie & Interscope.
+*The environments I know of currently that "corrupt" some materials are Billie & Interscope.
 
-These materials will be "corrupted" if these environments are in use, or even loaded *before* playing the map even if the environment you use is not one of them. So, it is best to not use them.
+*These materials will be "corrupted" if these environments are in use, or even loaded *before* playing the map even if the environment you use is not one of them. So, it is best to not use them.
 
+###"Corruption"
 
 Example of what I'm calling "corrupted": 
 ```typescript
