@@ -42,8 +42,8 @@ map.geoMaterials["WoodMat"] = {
 }
 ```
 ![Wood Image](wood.png)
-![Wood Plank](/blob/main/Geo%20Materials/wood%20plank.png)
-![Stone/Rock](/blob/main/Geo%20Materials/stone%20rock.png)
+![Wood Plank](wood%20plank.png)
+![Stone/Rock](stone%20rock.png)
 
 ## Crystal/Glass Material
 ```
@@ -54,4 +54,4 @@ map.geoMaterials["CrystalMat"] = {
   ]
 };
 ```
-![Crystal Image](/blob/main/Geo%20Materials/crystal.png)
+![Crystal Image](crystal.png)
