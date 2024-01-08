@@ -4,8 +4,9 @@ Anytime I mention "directional lights" I'm referring to the `DirectionalLight` g
 
 All screenshots are on the Billie environment with all of the env being removed, except for `BigSmokePS`, to show whether or not the material will be "corrupted" on the envs that do that to geo.
 
-The environments I know of that "corrupt" some materials are Billie & Interscope.
-These materials will be still "corrupted" if these environments are loaded *before* playing the map even if the environment you use is not one of them.
+The environments I know of currently that "corrupt" some materials: Billie & Interscope.
+
+These materials will be still "corrupted" if these environments are loaded *before* playing the map even if the environment you use is not one of them. So, it is best to not use them.
 
 
 Example of what I'm calling "corrupted": 
@@ -40,9 +41,9 @@ map.geoMaterials["WoodMat"] = {
   shaderKeywords: ["DIFFUSE", "DIRT", "FOG", "REFLECTION_PROBE_BOX_PROJECTION"]
 }
 ```
-![Wood Image](https://github.com/Shonshyn/BS-Tools-for-Mappers/blob/main/Geo%20Materials/wood.png)
-![Wood Plank](https://github.com/Shonshyn/BS-Tools-for-Mappers/blob/main/Geo%20Materials/wood%20plank.png)
-![Stone/Rock](https://github.com/Shonshyn/BS-Tools-for-Mappers/blob/main/Geo%20Materials/stone%20rock.png)
+![Wood Image](wood.png)
+![Wood Plank](/blob/main/Geo%20Materials/wood%20plank.png)
+![Stone/Rock](/blob/main/Geo%20Materials/stone%20rock.png)
 
 ## Crystal/Glass Material
 ```
@@ -53,4 +54,4 @@ map.geoMaterials["CrystalMat"] = {
   ]
 };
 ```
-![Crystal Image](https://github.com/Shonshyn/BS-Tools-for-Mappers/blob/main/Geo%20Materials/crystal.png)
+![Crystal Image](/blob/main/Geo%20Materials/crystal.png)
