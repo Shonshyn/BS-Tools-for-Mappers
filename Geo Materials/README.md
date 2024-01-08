@@ -53,6 +53,44 @@ map.geoMaterials["DefaultConcrete"] = {
 
 [Invisible](README.md#invisible-material)
 
+
+## The Three Light-able Materials (that I know of)
+Everybody knows about `TransparentLight` and `OpaqueLight`, but not a lot of people know that `BillieWater` contains all the necessary stuff to act as a light, and can be lit with the right shader keywords (or lack thereof).
+All geo in these screenshots has the bloom set to these parameters: 
+```typescript
+components.TubeBloomPrePassLight = {
+  bloomFogIntensityMultiplier: 0
+}
+```
+
+Unlit:
+![Unlit Image](unlitlights.png)
+Lit:
+![Unlit Image](litlights.png)
+
+
+Material on the left:
+```typescript
+map.geoMaterials["DefaultOL"] = {
+  shader: "OpaqueLight"
+}
+```
+
+Material on the Right:
+```typescript
+map.geoMaterials["DefaultTL"] = {
+  shader: "TransparentLight"
+}
+```
+
+Material on the Top:
+```typescript
+map.geoMaterials["GlowlessLight"] = {
+  shader: "BillieWater",
+  shaderKeywords: []
+}
+```
+
 ## Fixed Concrete Material
 Tries to match the default `InterscopeConcrete` shader as much as possible, but without a light map to remove the "corruption". ~~This way of doing it also removes the ability to color the material, but I might try to find a way to fix that later.~~ Added `"DIFFUSE"` to the "FixedConcrete" material which allows it to be colored again. :)
 
