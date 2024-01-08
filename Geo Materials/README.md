@@ -34,7 +34,7 @@ If a material does not have `color:` set, then it cannot be colored by the mater
 # Material List
 
 ## Wood/Stone Material
-```
+```typescript
 map.geoMaterials["WoodMat"] = {
   shader: "InterscopeConcrete",
   color: [0.5, 0.368, 0.36, 1],
