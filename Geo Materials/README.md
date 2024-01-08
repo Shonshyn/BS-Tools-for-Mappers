@@ -31,7 +31,7 @@ const map = new Difficulty("ExpertPlusLawless.dat", "ExpertPlusStandard.dat");
 ```
 You can change it to whatever you want but the `map` in the material code will have to match whatever you chose for your output difficulty.
 
-If a material does not have the `color:` set, then it cannot be colored by the material. However, it still could be colored by the lightmap, directional lights, or by lighting the geo itself, if supported.
+If a material does not have the `color:` set, then it cannot be colored by the material. However, it still could be colored by: the lightmap, directional lights, or by lighting the geo itself, if supported.
 
 # Material List
 [Fixed Concrete](README.md#fixed-concrete-material)
