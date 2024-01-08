@@ -35,3 +35,14 @@ map.geoMaterials["WoodMat"] = {
 ![Wood Image](https://github.com/Shonshyn/BS-Tools-for-Mappers/blob/main/Geo%20Materials/wood.png)
 ![Wood Plank](https://github.com/Shonshyn/BS-Tools-for-Mappers/blob/main/Geo%20Materials/wood%20plank.png)
 ![Stone/Rock](https://github.com/Shonshyn/BS-Tools-for-Mappers/blob/main/Geo%20Materials/stone%20rock.png)
+
+## Crystal/Glass Material
+```
+map.geoMaterials["CrystalMat"] = {
+  shader: "TransparentLight",
+  shaderKeywords: [
+    "REFLECTION_PROBE"
+  ]
+};
+```
+![Crystal Image](https://github.com/Shonshyn/BS-Tools-for-Mappers/blob/main/Geo%20Materials/crystal.png)
