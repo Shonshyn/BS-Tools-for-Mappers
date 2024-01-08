@@ -14,3 +14,5 @@ However, if something doesn't work as expected and it's my fault, please let me 
 
 I've never used Github before so excuse the jank. 
 If you have any suggestions or feedback you can contact me on Discord. (@shonshyn_)
+
+Huge thanks to Nasafrasa for teaching me how to use Remapper and other stuff.
