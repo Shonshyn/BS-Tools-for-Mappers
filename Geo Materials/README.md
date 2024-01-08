@@ -4,7 +4,7 @@ Anytime I mention "directional lights" I'm referring to the `DirectionalLight` g
 
 All screenshots are on the Billie environment with all of the env being removed, except for `BigSmokePS`, to show whether or not the material will be "corrupted" on the envs that do that to geo.
 
-In any screenshots with the background colored, every light was set to either red or blue to show how the lightmaps/reflection probes would affect the material.
+In any screenshots with the background colored, every light for the env was set to either red or blue and the lights for geo was set to green to show how the lightmaps/reflection probes would affect the material.
 
 The environments I know of currently that "corrupt" some materials: Billie & Interscope.
 
