@@ -26,6 +26,7 @@ You can change it to whatever you want but the `map` in the material code will h
 
 ## Wood/Stone Material
 ![Wood Image](https://github.com/Shonshyn/BS-Tools-for-Mappers/blob/main/Geo%20Materials/wood.png)
+![Wood Plank](https://github.com/Shonshyn/BS-Tools-for-Mappers/blob/main/Geo%20Materials/wood%20plank.png)
 ```
 map.geoMaterials["WoodMat"] = {
   shader: "InterscopeConcrete",
