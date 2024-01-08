@@ -58,6 +58,7 @@ map.geoMaterials["DefaultConcrete"] = {
 
 ## The Three Light-able Materials (that I know of)
 Everybody knows about `TransparentLight` and `OpaqueLight`, but not a lot of people know that `BillieWater` contains all the necessary stuff to act as a light, and can be lit with the right shader keywords (or lack thereof).
+A lot of people also don't know that the three shaders also look different from one another when lit.
 All geo in the first three screenshots has `bloomFogIntensityMultiplier` set to zero, with the last having bloom untouched.
 
 Unlit:
