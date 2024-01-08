@@ -40,7 +40,9 @@ map.geoMaterials["DefaultConcrete"] = {
 ```
 [Corrupted Example Image](https://github.com/Shonshyn/BS-Tools-for-Mappers/blob/main/Geo%20Materials/corrupted%20example1.png) 
 
-# Material List
+# Material List 
+[Lightable Shaders](README.md#the-three-light-able-materials-that-i-know-of)
+
 [Fixed Concrete](README.md#fixed-concrete-material)
 
 [Dirt/Wood/Stone](README.md#dirt-material)
