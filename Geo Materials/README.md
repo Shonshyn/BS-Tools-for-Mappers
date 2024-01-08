@@ -72,9 +72,9 @@ map.geoMaterials["FixedConcrete"] = {
 }
 ```
 
-## Wood/Stone Material
+## Dirt/Wood/Stone Material
 ```typescript
-map.geoMaterials["WoodMat"] = {
+map.geoMaterials["DirtMat"] = {
   shader: "InterscopeConcrete",
   color: [0.5, 0.368, 0.36, 1],
   shaderKeywords: ["DIFFUSE", "DIRT", "FOG", "REFLECTION_PROBE_BOX_PROJECTION"]
