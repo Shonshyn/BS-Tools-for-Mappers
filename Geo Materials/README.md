@@ -78,14 +78,14 @@ map.geoMaterials["DefaultOL"] = {
 }
 ```
 
-Material on the Right:
+Material on the right:
 ```typescript
 map.geoMaterials["DefaultTL"] = {
   shader: "TransparentLight"
 }
 ```
 
-Material on the Top:
+Material on the top:
 ```typescript
 map.geoMaterials["GlowlessLight"] = {
   shader: "BillieWater",
@@ -108,7 +108,7 @@ map.geoMaterials["DefaultConcrete"] = {
 }
 ```
 
-Material on the Right:
+Material on the right:
 ```typescript
 map.geoMaterials["FixedConcrete"] = {
   shader: "InterscopeConcrete",
