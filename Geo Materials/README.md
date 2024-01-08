@@ -136,7 +136,7 @@ map.geoMaterials["GridMat"] = {
 ![Grid Image](grid.png)
 
 ## Invisible Material
-This material is invisible or does not render or something idk, a great way to get some collision without using an unlit light.
+This material is invisible or does not render, or is broken because it doesn't like instancing or something idk. It's a great way to get some collision without using an unlit transparent light.
 This effect also works with the `BillieWater` shader.
 ```typescript
 map.geoMaterials["InvisMat"] = {
