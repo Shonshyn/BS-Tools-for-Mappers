@@ -24,7 +24,7 @@ All screenshots also have the environment fog unchanged from the default values 
 All screenshots also have the geo and env rotated a bit to show how a material will react to directional lights. 
 
 All code snippets will have `map` set the output difficulty. Here's an example of that, with `ExpertPlusLawless.dat` being the input and `ExpertPlusStandard.dat` being the output:
-```
+```typescript
 const map = new Difficulty("ExpertPlusLawless.dat", "ExpertPlusStandard.dat");
 ```
 You can change it to whatever you want but the `map` in the material code will have to match whatever you chose for your output difficulty.
