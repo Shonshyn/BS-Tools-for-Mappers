@@ -34,6 +34,8 @@ You can change it to whatever you want but the `map` in the material code will h
 If a material does not have the `color:` set, then it cannot be colored by the material. However, it still could be colored by the lightmap, directional lights, or by lighting the geo itself, if supported.
 
 # Material List
+[Fixed Concrete](README.md#fixed-concrete-material)
+
 [Wood/Stone](README.md#woodstone-material)
 
 [Crystal/Glass](README.md#crystalglass-material)
@@ -41,6 +43,25 @@ If a material does not have the `color:` set, then it cannot be colored by the m
 [Grid](README.md#grid-material)
 
 [Invisible](README.md#invisible-material)
+
+## Fixed Concrete Material
+
+Material on the Right:
+```typescript
+map.geoMaterials["FixedConcrete"] = {
+  shader: "InterscopeConcrete",
+  shaderKeywords: ["DIRT", "ENABLE_DIFFUSE", "ENABLE_DIRT", "ENABLE_DIRT_DETAIL", "ENABLE_FOG", "ENABLE_GROUND_FADE", "ENABLE_SPECULAR", "ENABLE_VERTEXT_COLOR", "FOG", "NOISE_DITHERING", "REFLECTION_PROBE", "REFLECTION_PROBE_BOX_PROJECTION", "REFLECTION_PROBE_BOX_PROJECTION_OFFSET", "_EMISSION", "_ENABLE_FOG_TINT", "_RIMLIGHT_NONE"]
+}
+```
+Material on the left:
+```typescript
+map.geoMaterials["DefaultConcrete"] = {
+  shader: "InterscopeConcrete",
+  color: [0, 1, 0, 1]
+}
+```
+
+![Concrete Comparison Image](concomp.png)
 
 ## Wood/Stone Material
 ```typescript
