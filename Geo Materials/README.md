@@ -47,6 +47,8 @@ map.geoMaterials["DefaultConcrete"] = {
 
 [Crystal/Glass](README.md#crystalglass-material)
 
+[Fog Light](README.md#fog-light-material)
+
 [Grid](README.md#grid-material)
 
 [Invisible](README.md#invisible-material)
@@ -101,7 +103,17 @@ Unlit:
 ![Crystal Image](crystal.png)
 ![Crystal Image](crystalunlit.png)
 Lit:
-![Crystal Lit](crystallit.png)
+![Crystal Lit](crystallit.png) //
+
+## Fog Light Material
+Light dissolves in fog, the bloom from `TubeBloomPrePassLight` component is still visible though. Can also be used without being lit to hide some parts of something in the fog, as nothing behind the geo in the fog will be visible.
+```typescript
+map.geoMaterials["FogMat"] = {
+  shader: "OpaqueLight",
+  shaderKeywords: ["ENABLE_HEIGHT_FOG"]
+}
+```
+![Fog Image](foglight.png)
 
 ## Grid Material
 This material always glows for some reason, it could be possible that the glow can be removed but I haven't figured it out.
