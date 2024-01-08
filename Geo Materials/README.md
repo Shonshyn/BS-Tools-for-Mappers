@@ -77,3 +77,13 @@ map.geoMaterials["GridMat"] = {
 ```
 ![Grid Image](grid.png)
 
+## Invisible Material
+This material is invisible or does not render or something idk, a great way to get some collision without using an unlit light.
+```typescript
+map.geoMaterials["InvisMat"] = {
+  shader: "InterscopeConcrete",
+  shaderKeywords: ["INSTANCING_ON"]
+}
+```
+![Invisible Image](invis.png)
+
