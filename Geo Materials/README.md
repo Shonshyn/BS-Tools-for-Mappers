@@ -54,7 +54,7 @@ map.geoMaterials["DefaultConcrete"] = {
 [Invisible](README.md#invisible-material)
 
 ## Fixed Concrete Material
-Tries to match the default `InterscopeConcrete` shader as much as possible, but without a light map to remove the "corruption". ~~This way of doing it also removes the ability to color the material, but I might try to find a way to fix that later.~~ Added `DIFFUSE` to the "FixedConcrete" material which allows it to be colored again. :)
+Tries to match the default `InterscopeConcrete` shader as much as possible, but without a light map to remove the "corruption". ~~This way of doing it also removes the ability to color the material, but I might try to find a way to fix that later.~~ Added `"DIFFUSE"` to the "FixedConcrete" material which allows it to be colored again. :)
 
 Comparison:
 ![Concrete Comparison Image](coloredconcrete.png)
