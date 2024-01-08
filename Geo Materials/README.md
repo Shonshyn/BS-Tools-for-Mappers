@@ -181,7 +181,7 @@ This material is invisible or does not render, or is broken because it doesn't l
 
 NOTE: Giving geo a collider WILL block the pause menu controllers from clicking buttons if the geo gets in the way.
 
-This effect also works with the `BillieWater` shader, but I assume using that shader would be slightly more expensive.
+This effect also works with the `BillieWater` shader, but I assume using that shader would be slightly more expensive. It could also not matter since the material is invisible, but I wouldn't risk it either way.
 ```typescript
 map.geoMaterials["InvisMat"] = {
   shader: "InterscopeConcrete",
