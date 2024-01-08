@@ -40,6 +40,8 @@ If a material does not have the `color:` set, then it cannot be colored by the m
 
 [Grid](README.md#grid-material)
 
+[Invisible](README.md#invisible-material)
+
 ## Wood/Stone Material
 ```typescript
 map.geoMaterials["WoodMat"] = {
