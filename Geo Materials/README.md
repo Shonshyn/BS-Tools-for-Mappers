@@ -8,10 +8,10 @@ If a screenshot has any other env pieces/geo/game objects, it was done to show a
 
 All screenshots also have the environment fog unchanged from the default values unless specified otherwise. 
 
-Anytime I mention "directional lights" I'm referring to the `DirectionalLight` game objects in the env. (Ex: `DirectionalLightFront`, `DirectionalLightBack`, `DirectionalLightLeft`, and `DirectionalLightRight`) 
+Anytime I mention "directional lights" I'm referring to the `DirectionalLight` game objects in the env. For example, on Billie there are `DirectionalLightFront`, `DirectionalLightBack`, `DirectionalLightLeft`, and `DirectionalLightRight` under `DayAndNight/Day` and `DayAndNight/Night`
 All screenshots also have the geo and env rotated a bit to show how a material will react to directional lights. 
 
-In any screenshots with the background colored, every light for the env was set to either red or blue and the lights for geo was set to green to show how the lightmaps/reflection probes would affect the material.
+In any screenshots with the background colored, every light for the env was set to either red or blue and the lights for geo were set to green to show how the lightmaps/reflection probes would affect the material.
 
 All code snippets will use `map` as the output. Here's an example of that, with `ExpertPlusLawless.dat` being the input and `ExpertPlusStandard.dat` being the output:
 ```typescript
