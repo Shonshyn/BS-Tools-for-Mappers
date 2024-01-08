@@ -2,8 +2,6 @@
 
 All screenshots are on the Billie environment to show whether or not the material will be "corrupted" on the environments that do that to geo.
 
-All Environments are made for **V3 maps** unless specified otherwise. Currently the recommended way to modify and work with these scripts is with Chromapper. Official editor lights are compatible but the process to apply is different and should generally be avoided by those without prior chroma knowledge.
-
 All code snippets will have `map` set the output difficulty. Here's an example of that, with `ExpertPlusLawless.dat` being the input and `ExpertPlusStandard.dat` being the output:
 ```
 const map = new Difficulty("ExpertPlusLawless.dat", "ExpertPlusStandard.dat");
