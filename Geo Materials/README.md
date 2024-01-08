@@ -25,7 +25,7 @@ If a screenshot has any other env pieces/geo/game objects, it was done to show a
 All screenshots also have the environment fog unchanged from the default values unless specified otherwise. 
 All screenshots also have the geo and env rotated a bit to show how a material will react to directional lights. 
 
-All code snippets will have `map` set the output difficulty. Here's an example of that, with `ExpertPlusLawless.dat` being the input and `ExpertPlusStandard.dat` being the output:
+All code snippets will use `map` as the output. Here's an example of that, with `ExpertPlusLawless.dat` being the input and `ExpertPlusStandard.dat` being the output:
 ```typescript
 const map = new Difficulty("ExpertPlusLawless.dat", "ExpertPlusStandard.dat");
 ```
