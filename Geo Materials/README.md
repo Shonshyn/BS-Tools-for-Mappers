@@ -2,9 +2,10 @@
 
 All screenshots are on the Billie environment with all of the env being removed except for `BigSmokePS` to show whether or not the material will be "corrupted" on the envs that do that to geo.
 
-If a screenshot has any other env pieces/geo/game objects, it was done to show a certain type of effect that the material will have. For example, some shader keywords will cause any smoke to not be visible from behind the geo. In these cases, I likely put clouds on, or something else to better demonstrate that.
+If a screenshot has any other env pieces/geo/game objects, it was done to show a certain type of effect that the material will have. For example, some shader keywords will cause any smoke to not be visible from behind the geo. In these cases, I likely threw in the `Clouds` env piece or something else to better demonstrate that.
 
-All screenshots also have the environment fog unchanged from the default values unless specified otherwise all screenshots also have the geo and env rotated a bit to show how a material will react to the directional lights (Ex: `DirectionalLightFront` game object) in an env. 
+All screenshots also have the environment fog unchanged from the default values unless specified otherwise. 
+All screenshots also have the geo and env rotated a bit to show how a material will react to the directional lights (Ex: `DirectionalLightFront`, `DirectionalLightBack`, `DirectionalLightLeft`, and `DirectionalLightRight`, game objects) in an env. 
 
 All code snippets will have `map` set the output difficulty. Here's an example of that, with `ExpertPlusLawless.dat` being the input and `ExpertPlusStandard.dat` being the output:
 ```
