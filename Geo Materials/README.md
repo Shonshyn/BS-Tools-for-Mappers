@@ -178,6 +178,8 @@ map.geoMaterials["GridMat"] = {
 
 ## Invisible Material
 This material is invisible or does not render, or is broken because it doesn't like instancing or something idk. It's a great way to get some collision without using an unlit transparent light.
+
+NOTE: Giving geo a collider WILL block the pause menu controllers from clicking buttons if the geo gets in the way.
 This effect also works with the `BillieWater` shader, but I assume using that shader would be slightly more expensive.
 ```typescript
 map.geoMaterials["InvisMat"] = {
