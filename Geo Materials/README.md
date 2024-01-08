@@ -25,7 +25,7 @@ You can change it to whatever you want but the `map` in the material code will h
 If a material does not have `color` set, then it cannot be colored by the material. However, it still could be colored by: the lightmap, directional lights, or by lighting the geo itself, if supported.
 
 ### "Corruption"
-The environments I know of currently that "corrupt" some materials are Billie & Interscope.
+The environments I know of currently that "corrupt" some materials are Billie, Interscope, and Linkin.
 
 I believe the corruption is caused by the light maps in some materials, as removing the lightmap or changing lightmaps fixes this problem. I could be wrong on this though.
 
