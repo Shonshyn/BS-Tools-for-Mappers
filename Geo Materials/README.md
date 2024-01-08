@@ -52,10 +52,10 @@ map.geoMaterials["DefaultConcrete"] = {
 [Invisible](README.md#invisible-material)
 
 ## Fixed Concrete Material
-Tries to match the default `InterscopeConcrete` shader as much as possible, but without a light map to remove the "corruption". This way of doing it also removes the ability to color the material, but I might try to find a way to fix that later.
+Tries to match the default `InterscopeConcrete` shader as much as possible, but without a light map to remove the "corruption". ~~This way of doing it also removes the ability to color the material, but I might try to find a way to fix that later.~~ Added `DIFFUSE` to the "FixedConcrete" material which allows it to be colored again. :)
 
 Comparison:
-![Concrete Comparison Image](concomp.png)
+![Concrete Comparison Image](coloredconcrete.png)
 
 
 Material on the left:
@@ -70,7 +70,7 @@ Material on the Right:
 ```typescript
 map.geoMaterials["FixedConcrete"] = {
   shader: "InterscopeConcrete",
-  shaderKeywords: ["DIRT", "ENABLE_DIFFUSE", "ENABLE_DIRT", "ENABLE_DIRT_DETAIL", "ENABLE_FOG", "ENABLE_GROUND_FADE", "ENABLE_SPECULAR", "ENABLE_VERTEXT_COLOR", "FOG", "NOISE_DITHERING", "REFLECTION_PROBE", "REFLECTION_PROBE_BOX_PROJECTION", "REFLECTION_PROBE_BOX_PROJECTION_OFFSET", "_EMISSION", "_ENABLE_FOG_TINT", "_RIMLIGHT_NONE"]
+  shaderKeywords: ["DIFFUSE", "DIRT", "ENABLE_DIFFUSE", "ENABLE_DIRT", "ENABLE_DIRT_DETAIL", "ENABLE_FOG", "ENABLE_GROUND_FADE", "ENABLE_SPECULAR", "ENABLE_VERTEXT_COLOR", "FOG", "NOISE_DITHERING", "REFLECTION_PROBE", "REFLECTION_PROBE_BOX_PROJECTION", "REFLECTION_PROBE_BOX_PROJECTION_OFFSET", "_EMISSION", "_ENABLE_FOG_TINT", "_RIMLIGHT_NONE"]
 }
 ```
 
