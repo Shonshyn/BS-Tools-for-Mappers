@@ -22,7 +22,7 @@
    ```
 - You can change it to whatever you want but the `map` in the material code will have to match whatever you chose for your output difficulty.
 
-- If a material does not have `color` set, then it cannot be colored by the material. However, it still could be colored by: the lightmap, directional lights, or by lighting the geo itself, if supported.
+- If a material does not have `color` set, then it cannot be colored by the material. However, it still could be colored by: the lightmap, directional lights, or by lighting the geo itself, if supported. (See ["Light-able Shaders"](README.md#the-three-light-able-materials-that-i-know-of))
 
 ### "Corruption"
 The environments I know of currently that "corrupt" some materials are Billie, Interscope, and Linkin.
@@ -40,23 +40,7 @@ map.geoMaterials["DefaultConcrete"] = {
 ```
 [Corrupted Example Image](https://github.com/Shonshyn/BS-Tools-for-Mappers/blob/main/Geo%20Materials/corrupted%20example1.png) 
 
-# Material List 
-[Lightable Shaders](README.md#the-three-light-able-materials-that-i-know-of)
-
-[Fixed Concrete](README.md#fixed-concrete-material)
-
-[Dirt/Wood/Stone](README.md#dirt-material)
-
-[Crystal/Glass](README.md#crystalglass-material)
-
-[Fog Light](README.md#fog-light-material)
-
-[Grid](README.md#grid-material)
-
-[Invisible](README.md#invisible-material)
-
-
-## The Three Light-able Materials (that I know of)
+### The Three Light-able Materials (that I know of)
 Everybody knows about `TransparentLight` and `OpaqueLight`, but not a lot of people know that `BillieWater` contains all the necessary stuff to act as a light, and can be lit with the right shader keywords (or lack thereof).
 A lot of people also don't know that the three shaders also look different from one another when lit.
 All geo in the first three screenshots has `bloomFogIntensityMultiplier` set to zero, with the last having bloom untouched.
@@ -93,6 +77,20 @@ map.geoMaterials["GlowlessLight"] = {
   shaderKeywords: []
 }
 ```
+
+# Material List 
+[Fixed Concrete](README.md#fixed-concrete-material)
+
+[Dirt/Wood/Stone](README.md#dirt-material)
+
+[Crystal/Glass](README.md#crystalglass-material)
+
+[Fog Light](README.md#fog-light-material)
+
+[Grid](README.md#grid-material)
+
+[Invisible](README.md#invisible-material)
+
 
 ## Fixed Concrete Material
 I tried to match the default `InterscopeConcrete` shader as much as possible, but I removed the lightmap to fix the "corruption". ~~This way of doing it also removes the ability to color the material, but I might try to find a way to fix that later.~~ Added `"DIFFUSE"` to the "FixedConcrete" material which allows it to be colored again. :)
