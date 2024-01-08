@@ -70,6 +70,7 @@ Material on the Right:
 ```typescript
 map.geoMaterials["FixedConcrete"] = {
   shader: "InterscopeConcrete",
+  color: [0, 1, 0, 1],
   shaderKeywords: ["DIFFUSE", "DIRT", "ENABLE_DIFFUSE", "ENABLE_DIRT", "ENABLE_DIRT_DETAIL", "ENABLE_FOG", "ENABLE_GROUND_FADE", "ENABLE_SPECULAR", "ENABLE_VERTEXT_COLOR", "FOG", "NOISE_DITHERING", "REFLECTION_PROBE", "REFLECTION_PROBE_BOX_PROJECTION", "REFLECTION_PROBE_BOX_PROJECTION_OFFSET", "_EMISSION", "_ENABLE_FOG_TINT", "_RIMLIGHT_NONE"]
 }
 ```
