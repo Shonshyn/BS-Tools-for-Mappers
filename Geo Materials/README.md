@@ -7,6 +7,7 @@ All screenshots use the Billie environment with all of the env pieces being remo
 If a screenshot has any other env pieces/geo/game objects, it was done to show a certain type of effect that the material will have. For example, some shader keywords will cause any smoke to not be visible from behind the geo. In these cases, I likely threw in the `Clouds` env piece or something else to better demonstrate that.
 
 All screenshots also have the environment fog unchanged from the default values unless specified otherwise. 
+
 Anytime I mention "directional lights" I'm referring to the `DirectionalLight` game objects in the env. (Ex: `DirectionalLightFront`, `DirectionalLightBack`, `DirectionalLightLeft`, and `DirectionalLightRight`) 
 All screenshots also have the geo and env rotated a bit to show how a material will react to directional lights. 
 
