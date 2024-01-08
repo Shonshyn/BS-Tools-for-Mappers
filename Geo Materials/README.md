@@ -60,3 +60,4 @@ map.geoMaterials["CrystalMat"] = {
 };
 ```
 ![Crystal Image](crystal.png)
+![Crystal Lit](crystallit.png)
