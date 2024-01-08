@@ -22,7 +22,7 @@
    ```
 - You can change it to whatever you want but the `map` in the material code will have to match whatever you chose for your output difficulty.
 
-- If a material does not have `color` set, then it cannot be colored by the material. However, it still could be colored by: the lightmap, directional lights, or by lighting the geo itself, if supported. (See ["Light-able Shaders"](README.md#the-three-light-able-shaders-that-i-know-of))
+- If a material does not have `color` set, then it cannot be colored by the material. However, it still could be colored by: the lightmap, directional lights, or by lighting the geo itself, if supported. (See [Light-able Shaders](README.md#the-three-light-able-shaders-that-i-know-of))
 
 ### "Corruption"
 The environments I know of currently that "corrupt" some materials are Billie, Interscope, and Linkin.
