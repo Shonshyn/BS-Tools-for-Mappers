@@ -68,10 +68,10 @@ Lit:
 ![Crystal Lit](crystallit.png)
 
 ## Grid Material
+This material always glows for some reason, it could be possible that the glow can be removed but I haven't figured it out.
 ```typescript
 map.geoMaterials["GridMat"] = {
   shader: "WaterfallMirror",
-  color: [0.5,0,1, 1],
   shaderKeywords: ["ENABLE_DIRT"]
 }
 ```
