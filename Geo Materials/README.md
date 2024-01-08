@@ -1,6 +1,13 @@
 # Info
 
 All screenshots are on the Billie environment with all of the env being removed except for `BigSmokePS` to show whether or not the material will be "corrupted" on the envs that do that to geo.
+Example of what I'm calling "corrupted" (https://github.com/Shonshyn/BS-Tools-for-Mappers/blob/main/Geo%20Materials/corrupted%20example.png) this example uses 
+```
+map.geoMaterials["DefaultConcrete"] = {
+  shader: "InterscopeConcrete",
+  color: [1,1,1,1]
+}
+```
 
 If a screenshot has any other env pieces/geo/game objects, it was done to show a certain type of effect that the material will have. For example, some shader keywords will cause any smoke to not be visible from behind the geo. In these cases, I likely threw in the `Clouds` env piece or something else to better demonstrate that.
 
