@@ -46,6 +46,10 @@ If a material does not have the `color:` set, then it cannot be colored by the m
 
 ## Fixed Concrete Material
 Tries to match the default `InterscopeConcrete` shader as much as possible, but without a light map to remove the "corruption". This way of doing it also removes the ability to color the material, but I might try to find a way to fix that later.
+
+Comparison:
+![Concrete Comparison Image](concomp.png)
+
 Material on the Right:
 ```typescript
 map.geoMaterials["FixedConcrete"] = {
@@ -60,9 +64,6 @@ map.geoMaterials["DefaultConcrete"] = {
   color: [0, 1, 0, 1]
 }
 ```
-
-Comparison:
-![Concrete Comparison Image](concomp.png)
 
 ## Wood/Stone Material
 ```typescript
