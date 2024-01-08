@@ -4,9 +4,10 @@ Anytime I mention "directional lights" I'm referring to the `DirectionalLight` g
 
 All screenshots use the Billie environment with all of the env being removed, except for `BigSmokePS`, to show whether or not the material will be "corrupted" on the envs that do that to geo. (See ["Corruption"](README.md#corruption))
 
+If a screenshot has any other env pieces/geo/game objects, it was done to show a certain type of effect that the material will have. For example, some shader keywords will cause any smoke to not be visible from behind the geo. In these cases, I likely threw in the `Clouds` env piece or something else to better demonstrate that.
+
 In any screenshots with the background colored, every light for the env was set to either red or blue and the lights for geo was set to green to show how the lightmaps/reflection probes would affect the material.
 
-If a screenshot has any other env pieces/geo/game objects, it was done to show a certain type of effect that the material will have. For example, some shader keywords will cause any smoke to not be visible from behind the geo. In these cases, I likely threw in the `Clouds` env piece or something else to better demonstrate that.
 
 All screenshots also have the environment fog unchanged from the default values unless specified otherwise. 
 All screenshots also have the geo and env rotated a bit to show how a material will react to directional lights. 
