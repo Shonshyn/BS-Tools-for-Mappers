@@ -113,6 +113,14 @@ map.geoMaterials["FogMat"] = {
   shaderKeywords: ["ENABLE_HEIGHT_FOG"]
 }
 ```
+This screenshot has the fog set to these parameters: 
+```typescript
+components.BloomFogEnvironment = {
+  attenuation: 0,
+  offset: 0,
+  startY: -0.25,
+  height: 0
+}```
 ![Fog Image](foglight.png)
 
 ## Grid Material
