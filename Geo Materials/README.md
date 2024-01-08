@@ -38,6 +38,8 @@ If a material does not have the `color:` set, then it cannot be colored by the m
 
 [Crystal/Glass](README.md#crystalglass-material)
 
+[Grid](README.md#grid-material)
+
 ## Wood/Stone Material
 ```typescript
 map.geoMaterials["WoodMat"] = {
@@ -64,3 +66,14 @@ Unlit:
 ![Crystal Image](crystalunlit.png)
 Lit:
 ![Crystal Lit](crystallit.png)
+
+## Grid Material
+```typescript
+map.geoMaterials["GridMat"] = {
+  shader: "WaterfallMirror",
+  color: [0.5,0,1, 1],
+  shaderKeywords: ["ENABLE_DIRT"]
+}
+```
+![Grid Image](grid.png)
+
