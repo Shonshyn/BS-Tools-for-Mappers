@@ -41,7 +41,7 @@ map.geoMaterials["DefaultConcrete"] = {
 # Material List
 [Fixed Concrete](README.md#fixed-concrete-material)
 
-[Wood/Stone](README.md#woodstone-material)
+[Dirt/Wood/Stone](README.md#dirtwoodstone-material)
 
 [Crystal/Glass](README.md#crystalglass-material)
 
