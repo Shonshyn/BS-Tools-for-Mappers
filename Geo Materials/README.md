@@ -6,9 +6,9 @@ All screenshots are on the Billie environment with all of the env being removed,
 
 In any screenshots with the background colored, every light for the env was set to either red or blue and the lights for geo was set to green to show how the lightmaps/reflection probes would affect the material.
 
-The environments I know of currently that "corrupt" some materials: Billie & Interscope.
+The environments I know of currently that "corrupt" some materials are Billie & Interscope.
 
-These materials will be still "corrupted" if these environments are loaded *before* playing the map even if the environment you use is not one of them. So, it is best to not use them.
+These materials will be "corrupted" if these environments are in use, or even loaded *before* playing the map even if the environment you use is not one of them. So, it is best to not use them.
 
 
 Example of what I'm calling "corrupted": 
