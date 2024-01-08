@@ -43,7 +43,7 @@ map.geoMaterials["DefaultConcrete"] = {
 # Material List
 [Fixed Concrete](README.md#fixed-concrete-material)
 
-[Dirt/Wood/Stone](README.md#dirtwoodstone-material)
+[Dirt/Wood/Stone](README.md#dirt-material)
 
 [Crystal/Glass](README.md#crystalglass-material)
 
@@ -75,7 +75,8 @@ map.geoMaterials["FixedConcrete"] = {
 }
 ```
 
-## Dirt/Wood/Stone Material
+## Dirt Material
+Can also be used for grass, snow, wood, stone, rocks, and really anything that needs texture but doesn't need to be shiny/reflective.
 ```typescript
 map.geoMaterials["DirtMat"] = {
   shader: "InterscopeConcrete",
