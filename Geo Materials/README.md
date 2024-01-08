@@ -94,7 +94,7 @@ map.geoMaterials["GlowlessLight"] = {
 ```
 
 ## Fixed Concrete Material
-I tried to match the default `InterscopeConcrete` shader as much as possible, but I removed the `"LIGHTMAP"` to fix the "corruption". ~~This way of doing it also removes the ability to color the material, but I might try to find a way to fix that later.~~ Added `"DIFFUSE"` to the "FixedConcrete" material which allows it to be colored again. :)
+I tried to match the default `InterscopeConcrete` shader as much as possible, but I removed the lightmap to fix the "corruption". ~~This way of doing it also removes the ability to color the material, but I might try to find a way to fix that later.~~ Added `"DIFFUSE"` to the "FixedConcrete" material which allows it to be colored again. :)
 
 Comparison:
 ![Concrete Comparison Image](coloredconcrete.png)
