@@ -115,6 +115,7 @@ map.geoMaterials["GridMat"] = {
 
 ## Invisible Material
 This material is invisible or does not render or something idk, a great way to get some collision without using an unlit light.
+This effect also works with the `BillieWater` shader.
 ```typescript
 map.geoMaterials["InvisMat"] = {
   shader: "InterscopeConcrete",
