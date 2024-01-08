@@ -12,9 +12,9 @@ const map = new Difficulty("ExpertPlusLawless.dat", "ExpertPlusStandard.dat");
 ```
 You can change it to whatever you want but the `map` in the material code will have to match whatever you chose for your output difficulty.
 
-### Material List
+# Material List
 
-# Wood/Stone Material
+## Wood/Stone Material
 ![Wood Image](https://github.com/Shonshyn/BS-Tools-for-Mappers/blob/main/Geo%20Materials/wood.png)
 ```
 map.geoMaterials["WoodMat"] = {
