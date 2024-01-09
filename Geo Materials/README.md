@@ -221,6 +221,8 @@ map.geoMaterials["ReflectMat1"] = {
 ## Blurry Mirror
 Not a true mirror, uses the env's reflection probes.
 
+NOTE: Material color will only be visible on the sides affected by directional lights.
+
 If you do not need the material to be colorable, remove `"DIFFUSE"` and it will appear a little more reflective.
 You can also remove `"REFLECTION_PROBE_BOX_PROJECTION"` to make it a 2d reflection instead of a weird 3d-ish reflection.
 ```typescript
@@ -240,6 +242,8 @@ map.geoMaterials["ReflectMat2"] = {
 ## Shiny Mirror
 Not a true mirror, uses the env's reflection probes.
 
+NOTE: Material color will only be visible on the sides affected by directional lights.
+
 If you do not need the material to be colorable, remove `"DIFFUSE"` and it will appear a little more reflective.
 You can also remove `"REFLECTION_PROBE_BOX_PROJECTION"` to make it a 2d reflection instead of a weird 3d-ish reflection.
 ```typescript
@@ -257,6 +261,9 @@ map.geoMaterials["ReflectMat3"] = {
 ![Shiny Reflective Image](shinyreflection.png)
 
 ## Blurry Metal
+
+NOTE: Material color will only be visible on the sides affected by directional lights.
+
 If you do not need the material to be colorable, remove `"DIFFUSE"` and it will appear a little more reflective.
 You can also remove `"REFLECTION_PROBE_BOX_PROJECTION"` to make it a 2d reflection instead of a weird 3d-ish reflection.
 ```typescript
@@ -277,6 +284,9 @@ This screenshot was taken from a different angle to better show the reflection.
 ![Blurry Metal Image](blurrymetal.png)
 
 ## Shiny Metal
+
+NOTE: Material color will only be visible on the sides affected by directional lights.
+
 If you do not need the material to be colorable, remove `"DIFFUSE"` and it will appear a little more reflective.
 You can also remove `"REFLECTION_PROBE_BOX_PROJECTION"` to make it a 2d reflection instead of a weird 3d-ish reflection.
 ```typescript
