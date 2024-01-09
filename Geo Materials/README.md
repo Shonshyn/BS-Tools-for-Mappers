@@ -91,7 +91,7 @@ map.geoMaterials["GlowlessLight"] = {
 
 [Fog Light](README.md#fog-light)
 
-[Grid](README.md#grid)
+[Grid/Swirly Circle/Swirly Ball](README.md#gridswirly-circleswirly-ball)
 
 [Invisible](README.md#invisible)
 
@@ -220,7 +220,7 @@ components.BloomFogEnvironment = {
 
 ![Fog Image](foglight.png)
 
-## Grid
+## Grid/Swirly Circle/Swirly Ball
 This material always glows for some reason, it could be possible that the glow can be removed but I haven't figured it out.
 
 Throw it on a sphere and you get some cool swirls. Can also be used to make a cool looking eyeball, I've discovered.
