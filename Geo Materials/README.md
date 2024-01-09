@@ -239,7 +239,7 @@ Not a true mirror, uses the env's reflection probes.
 If you do not need the material to be colorable, remove `"DIFFUSE"` and it will appear a little more reflective.
 You can also remove `"REFLECTION_PROBE_BOX_PROJECTION"` to make it a 2d reflection instead of a weird 3d-ish reflection.
 ```typescript
-map.geoMaterials["Light3"] = {
+map.geoMaterials["ReflectMat3"] = {
    shader: "InterscopeCar",
    color: [0, 1, 0, 1],
    shaderKeywords: [
