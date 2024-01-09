@@ -83,6 +83,10 @@ map.geoMaterials["GlowlessLight"] = {
 
 [Dirt/Wood/Stone](README.md#dirt)
 
+[Blurry Metal](README.md#blurry-metal)
+
+[Shiny Metal](README.md#shiny-metal)
+
 [Crystal/Glass](README.md#crystalglass)
 
 [Fog Light](README.md#fog-light)
@@ -96,10 +100,6 @@ map.geoMaterials["GlowlessLight"] = {
 [Blurry Mirror](README.md#blurry-mirror)
 
 [Shiny Mirror](README.md#shiny-mirror)
-
-[Blurry Metal](README.md#blurry-metal)
-
-[Shiny Metal](README.md#shiny-metal)
 
 
 
@@ -139,6 +139,51 @@ map.geoMaterials["DirtMat"] = {
 ![Wood Image](wood.png)
 ![Wood Plank](wood%20plank.png)
 ![Stone/Rock](stone%20rock.png)
+
+## Blurry Metal
+
+NOTE: Material color will only be visible on the sides affected by directional lights.
+
+If you do not need the material to be colorable, remove `"DIFFUSE"` and it will appear a little more reflective.
+You can also remove `"REFLECTION_PROBE_BOX_PROJECTION"` to make it a 2d reflection instead of a weird 3d-ish reflection.
+```typescript
+map.geoMaterials["MetalMat1"] = {
+   shader: "InterscopeConcrete",
+   color: [0, 1, 0, 1],
+   shaderKeywords: [
+      "DIRT",
+      "DIFFUSE",
+      "FOG",
+      "REFLECTION_PROBE",
+      "REFLECTION_PROBE_BOX_PROJECTION",
+      "REFLECTION_PROBE_BOX_PROJECTION_OFFSET"
+   ]
+}
+```
+This screenshot was taken from a different angle to better show the reflection.
+![Blurry Metal Image](blurrymetal.png)
+
+## Shiny Metal
+
+NOTE: Material color will only be visible on the sides affected by directional lights.
+
+If you do not need the material to be colorable, remove `"DIFFUSE"` and it will appear a little more reflective.
+You can also remove `"REFLECTION_PROBE_BOX_PROJECTION"` to make it a 2d reflection instead of a weird 3d-ish reflection.
+```typescript
+map.geoMaterials["MetalMat2"] = {
+   shader: "InterscopeCar",
+   color: [0, 1, 0, 1],
+   shaderKeywords: [
+      "DIRT",
+      "DIFFUSE",
+      "FOG",
+      "REFLECTION_PROBE",
+      "REFLECTION_PROBE_BOX_PROJECTION",
+      "REFLECTION_PROBE_BOX_PROJECTION_OFFSET"
+   ]
+}
+```
+![Shiny Metal Image](shinymetal.png)
 
 ## Crystal/Glass
 ```typescript
@@ -237,7 +282,7 @@ map.geoMaterials["ReflectMat2"] = {
    ]
 }
 ```
-![Blurry Reflective Image](blurreflection.png)
+![Blurry Mirror Image](blurreflection.png)
 
 ## Shiny Mirror
 Not a true mirror, uses the env's reflection probes.
@@ -258,50 +303,5 @@ map.geoMaterials["ReflectMat3"] = {
    ]
 }
 ```
-![Shiny Reflective Image](shinyreflection.png)
-
-## Blurry Metal
-
-NOTE: Material color will only be visible on the sides affected by directional lights.
-
-If you do not need the material to be colorable, remove `"DIFFUSE"` and it will appear a little more reflective.
-You can also remove `"REFLECTION_PROBE_BOX_PROJECTION"` to make it a 2d reflection instead of a weird 3d-ish reflection.
-```typescript
-map.geoMaterials["MetalMat1"] = {
-   shader: "InterscopeConcrete",
-   color: [0, 1, 0, 1],
-   shaderKeywords: [
-      "DIRT",
-      "DIFFUSE",
-      "FOG",
-      "REFLECTION_PROBE",
-      "REFLECTION_PROBE_BOX_PROJECTION",
-      "REFLECTION_PROBE_BOX_PROJECTION_OFFSET"
-   ]
-}
-```
-This screenshot was taken from a different angle to better show the reflection.
-![Blurry Metal Image](blurrymetal.png)
-
-## Shiny Metal
-
-NOTE: Material color will only be visible on the sides affected by directional lights.
-
-If you do not need the material to be colorable, remove `"DIFFUSE"` and it will appear a little more reflective.
-You can also remove `"REFLECTION_PROBE_BOX_PROJECTION"` to make it a 2d reflection instead of a weird 3d-ish reflection.
-```typescript
-map.geoMaterials["MetalMat2"] = {
-   shader: "InterscopeCar",
-   color: [0, 1, 0, 1],
-   shaderKeywords: [
-      "DIRT",
-      "DIFFUSE",
-      "FOG",
-      "REFLECTION_PROBE",
-      "REFLECTION_PROBE_BOX_PROJECTION",
-      "REFLECTION_PROBE_BOX_PROJECTION_OFFSET"
-   ]
-}
-```
-![Shiny Metal Image](shinymetal.png)
+![Shiny Mirror Image](shinyreflection.png)
 
