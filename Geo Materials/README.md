@@ -79,20 +79,27 @@ map.geoMaterials["GlowlessLight"] = {
 ```
 
 # Material List 
-[Fixed Concrete](README.md#fixed-concrete-material)
+[Fixed Concrete](README.md#fixed-concrete)
 
-[Dirt/Wood/Stone](README.md#dirt-material)
+[Dirt/Wood/Stone](README.md#dirt)
 
-[Crystal/Glass](README.md#crystalglass-material)
+[Crystal/Glass](README.md#crystalglass)
 
-[Fog Light](README.md#fog-light-material)
+[Fog Light](README.md#fog-light)
 
-[Grid](README.md#grid-material)
+[Grid](README.md#grid)
 
-[Invisible](README.md#invisible-material)
+[Invisible](README.md#invisible)
+
+[Slightly Reflective](README.md#slightly-reflective)
+
+[Blurry Mirror](README.md#blurry-mirror)
+
+[Shiny Mirror](README.md#shiny-mirror)
 
 
-## Fixed Concrete Material
+
+## Fixed Concrete
 I tried to match the default `InterscopeConcrete` shader as much as possible, but I removed the lightmap to fix the "corruption". ~~This way of doing it also removes the ability to color the material, but I might try to find a way to fix that later.~~ Added `"DIFFUSE"` to the "FixedConcrete" material which allows it to be colored again. :)
 
 Comparison:
@@ -116,7 +123,7 @@ map.geoMaterials["FixedConcrete"] = {
 }
 ```
 
-## Dirt Material
+## Dirt
 Can also be used for grass, snow, wood, stone, rocks, and really anything that needs texture but doesn't need to be shiny/reflective.
 ```typescript
 map.geoMaterials["DirtMat"] = {
@@ -129,7 +136,7 @@ map.geoMaterials["DirtMat"] = {
 ![Wood Plank](wood%20plank.png)
 ![Stone/Rock](stone%20rock.png)
 
-## Crystal/Glass Material
+## Crystal/Glass
 ```typescript
 map.geoMaterials["CrystalMat"] = {
   shader: "TransparentLight",
@@ -144,7 +151,7 @@ Unlit:
 Lit:
 ![Crystal Lit](crystallit.png) 
 
-## Fog Light Material
+## Fog Light
 Light dissolves in fog, the bloom from `TubeBloomPrePassLight` component is still visible though. Can also be used without being lit to hide some parts of something in the fog, as nothing behind the geo in the fog will be visible.
 ```typescript
 map.geoMaterials["FogMat"] = {
@@ -164,7 +171,7 @@ components.BloomFogEnvironment = {
 
 ![Fog Image](foglight.png)
 
-## Grid Material
+## Grid
 This material always glows for some reason, it could be possible that the glow can be removed but I haven't figured it out.
 ```typescript
 map.geoMaterials["GridMat"] = {
@@ -174,7 +181,7 @@ map.geoMaterials["GridMat"] = {
 ```
 ![Grid Image](grid.png)
 
-## Invisible Material
+## Invisible
 This material is invisible or does not render, or is broken because it doesn't like instancing or something idk. It's a great way to get some collision without using an unlit transparent light.
 
 NOTE: Giving geo a collider WILL block the pause menu controllers from clicking buttons if the geo gets in the way.
@@ -187,4 +194,61 @@ map.geoMaterials["InvisMat"] = {
 }
 ```
 ![Invisible Image](invis.png)
+
+## Slightly Reflective
+This material has a VERY subtle reflection to it.
+
+If you do not need the material to be colorable, remove `"DIFFUSE"` and it will appear a little more reflective.
+You can also remove `"REFLECTION_PROBE_BOX_PROJECTION"` to make it a 2d reflection instead of a weird 3d-ish reflection.
+```typescript
+map.geoMaterials["ReflectMat1"] = {
+   shader: "BTSPillar",
+   color: [0, 1, 0, 1],
+   shaderKeywords: [
+      "DIFFUSE",
+      "FOG",
+      "REFLECTION_PROBE",
+      "REFLECTION_PROBE_BOX_PROJECTION"
+   ]
+}
+```
+![Slightly Reflective Image](slightreflection.png)
+
+## Blurry Mirror
+Not a true mirror, uses the env's reflection probes.
+
+If you do not need the material to be colorable, remove `"DIFFUSE"` and it will appear a little more reflective.
+You can also remove `"REFLECTION_PROBE_BOX_PROJECTION"` to make it a 2d reflection instead of a weird 3d-ish reflection.
+```typescript
+map.geoMaterials["ReflectMat2"] = {
+   shader: "InterscopeConcrete",
+   color: [0, 1, 0, 1],
+   shaderKeywords: [
+      "DIFFUSE",
+      "FOG",
+      "REFLECTION_PROBE",
+      "REFLECTION_PROBE_BOX_PROJECTION"
+   ]
+}
+```
+![Blurry Reflective Image](blurreflection.png)
+
+## Shiny Mirror
+Not a true mirror, uses the env's reflection probes.
+
+If you do not need the material to be colorable, remove `"DIFFUSE"` and it will appear a little more reflective.
+You can also remove `"REFLECTION_PROBE_BOX_PROJECTION"` to make it a 2d reflection instead of a weird 3d-ish reflection.
+```typescript
+map.geoMaterials["Light3"] = {
+   shader: "InterscopeCar",
+   color: [0, 1, 0, 1],
+   shaderKeywords: [
+      "DIFFUSE",
+      "FOG",
+      "REFLECTION_PROBE",
+      "REFLECTION_PROBE_BOX_PROJECTION"
+   ]
+}
+```
+![Shiny Reflective Image](shinyreflection.png)
 
