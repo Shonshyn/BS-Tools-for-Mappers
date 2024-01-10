@@ -15,7 +15,7 @@ Here is where I will list information regarding what I figure out about shader k
   Standard = SimpleLit
   OpaqueLight = OpaqueNeonLight
   TransparentLight = TransparentNeonLight
-  BaseWater = SimpleLit
+  BaseWater = WaterLit
   BillieWater = WaterLit
   BTSPillar = SimpleLit
   InterscopeConcrete =
