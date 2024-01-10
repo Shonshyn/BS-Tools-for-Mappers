@@ -221,7 +221,7 @@ components.BloomFogEnvironment = {
 ![Fog Image](foglight.png)
 
 ## Grid/Swirly Circle/Swirly Ball
-The grid texture this material uses is the same texture used for mirrors, it's just usually a little hard to see on mirrors because of the reflective nature of mirrors. (also most of the base game mirrors have the texture scaled super tiny)
+The grid texture this material uses is the same texture used for mirrors, it's just usually a little hard to see on mirrors because of the reflective nature of a mirror. (also most of the base game mirrors have the texture scaled super tiny)
 
 This material always glows for some reason, it could be possible that the glow can be removed but I haven't figured it out.
 
