@@ -8,7 +8,7 @@
 
   map.geoMaterials["Dirt"] = MaterialPresets.Dirt;
 
-  // Or you would like to modify the material slightly.
+  // Or if you would like to modify the material slightly.
 
   const dirtMat = MaterialPresets.Dirt;
   dirtMat.color = [1, 1, 0, 1];
