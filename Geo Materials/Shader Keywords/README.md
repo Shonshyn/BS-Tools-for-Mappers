@@ -1,13 +1,14 @@
 # Info
 - Here is where I will list information regarding what I figure out about shader keywords as I mess around with them over time.
-- I will list keywords found inside Chroma and I also provide a list of untested keywords I got from various sources.
+- I will list keywords found inside Chroma here.
+  *For a larger, more-likely-to-not-work list, go [here](Unverified%20Keywords/README.md).
 - I will be listing these keywords under the shader I believe it will work for.
 - The shader names I will use are the ones listed in Unity that get put on geo, not the shader names from Chroma as I suspect the one listed by Unity is the important one.
 
 ### Stuff to keep in mind
 - I know nothing about materials, shaders, and shader keywords.
 - I know VERY little about Unity.
-- I got these keywords from like 100 different sources from within the game so I don't know how many of these are valid keywords. (I probably have missed some or added some that are not even a thing)
+- I got these keywords from 
 - I have not tested every keyword listed here.
 
 ### Shader List
