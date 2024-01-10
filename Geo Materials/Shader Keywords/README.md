@@ -18,7 +18,7 @@ Here is where I will list information regarding what I figure out about shader k
   BaseWater = WaterLit
   BillieWater = WaterLit
   BTSPillar = SimpleLit
-  InterscopeConcrete =
+  InterscopeConcrete = SimpleLit
   InterscopeCar = SimpleLit
   WaterfallMirror = Mirror
   ```
