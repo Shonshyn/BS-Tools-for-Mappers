@@ -11,7 +11,6 @@ Here is where I will list information regarding what I figure out about shader k
 - I will be listing these keywords under the shader I believe it will work for.
 - The shader names I will use are the ones listed in Unity that get put on geo, not the shader names from Chroma as I suspect the one listed by Unity is the important one.
 - Here I will have a list of what shader each Chroma shader uses:
-  *
   ```
   Standard = SimpleLit
   OpaqueLight = OpaqueNeonLight
