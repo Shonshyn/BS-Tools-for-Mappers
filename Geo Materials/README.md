@@ -2,6 +2,18 @@
 
 ### Remapper Integration
 - Aurellis (Aureliona1) added a `material.ts` script which is supposed to allow you to use the materials listed here as a constant in Remapper if you place the `material.ts` in the map folder, but I have not personally tested this yet.
+- Can be used simply as
+  ```typescript
+  import { MaterialPresets } from "./materials.ts";
+
+  map.geoMaterials["Dirt"] = MaterialPresets.Dirt;
+
+  // Or you would like to modify the material slightly.
+
+  const dirtMat = MaterialPresets.Dirt;
+  dirtMat.color = [1, 1, 0, 1];
+  map.geoMaterials["Dirt"] = dirtMat;
+  ```
 
 ### My Vocab
 - Anytime I mention "env pieces" I'm referring to game objects that are loaded in when a level is loaded, which can be affected with Environment Enhancement. 
