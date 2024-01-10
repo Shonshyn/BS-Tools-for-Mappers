@@ -50,7 +50,7 @@ Unlit:
 Lit:
 ![Lit Image](litlights.png)
 Lit, but lights are set to [0,0,0,0]:
-![Black Lit Image](blacklights.png)
+![Black Lit Image](Example%20Images/blacklights.png)
 Lit with bloom:
 ![Lit Bloom Image](litlightsbloom.png)
 
