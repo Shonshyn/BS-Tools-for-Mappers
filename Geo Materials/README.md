@@ -221,9 +221,11 @@ components.BloomFogEnvironment = {
 ![Fog Image](foglight.png)
 
 ## Grid/Swirly Circle/Swirly Ball
+The grid texture this material uses is the same texture used for mirrors, it's just usually a little hard to see on mirrors because of the reflective nature of mirrors. (also most of the base game mirrors have the texture scaled super tiny)
+
 This material always glows for some reason, it could be possible that the glow can be removed but I haven't figured it out.
 
-Throw it on a sphere and you get some cool swirls. Can also be used to make a cool looking eyeball, I've discovered.
+Throw it on a sphere and you get some cool swirls. It can also be used to make a cool-looking eyeball, I've discovered.
 ```typescript
 map.geoMaterials["GridMat"] = {
   shader: "WaterfallMirror",
