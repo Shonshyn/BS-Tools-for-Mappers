@@ -25,8 +25,24 @@ Here is where I will list information regarding what I figure out about shader k
 
 # Shader List 
 This is a list of all shaders currently used by Chroma. (These shaders are the ones listed by the game object your geo has created, not the shader you set in the map materials.)
-- SimpleLit
-- OpaqueNeonLight
-- TransparentNeonLight
-- WaterLit
-- Mirror
+- [SimpleLit](README.md#SimpleLit)
+- [OpaqueNeonLight](README.md#OpaqueNeonLight)
+- [TransparentNeonLight](README.md#TransparentNeonLight)
+- [WaterLit](README.md#WaterLit)
+- [Mirror](README.md#Mirror)
+
+
+## SimpleLit
+
+
+## OpaqueNeonLight
+
+
+## TransparentNeonLight
+
+
+## WaterLit
+
+
+## Mirror
+
