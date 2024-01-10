@@ -2,7 +2,7 @@
 
 ### Remapper Integration
 - Aurellis (Aureliona1) added a `material.ts` script which is supposed to allow you to use the materials listed here as a constant in Remapper if you place the `material.ts` in the map folder, but I have not personally tested this yet.
-- Can be used simply as
+- Can be used simply as:
   ```typescript
   import { MaterialPresets } from "./materials.ts";
 
