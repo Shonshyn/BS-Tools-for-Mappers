@@ -38,7 +38,7 @@ map.geoMaterials["DefaultConcrete"] = {
   color: [1,1,1,1]
 }
 ```
-[Corrupted Example Image](https://github.com/Shonshyn/BS-Tools-for-Mappers/blob/main/Geo%20Materials/corrupted%20example1.png) 
+[Corrupted Example Image](https://github.com/Shonshyn/BS-Tools-for-Mappers/blob/main/Geo%20Materials/Example%20Images/corrupted%20example1.png) 
 
 ### The Three Light-able Shaders (that I know of)
 Everybody knows about `TransparentLight` and `OpaqueLight`, but not a lot of people know that `BillieWater` contains all the necessary stuff to act as a light, and can be lit with the right shader keywords (or lack thereof).
@@ -46,13 +46,13 @@ A lot of people also don't know that the three shaders also look different from 
 All geo in the first three screenshots has `bloomFogIntensityMultiplier` set to zero, with the last having bloom untouched.
 
 Unlit:
-![Unlit Image](unlitlights.png)
+![Unlit Image](Example%20Images/unlitlights.png)
 Lit:
-![Lit Image](litlights.png)
+![Lit Image](Example%20Images/litlights.png)
 Lit, but lights are set to [0,0,0,0]:
 ![Black Lit Image](Example%20Images/blacklights.png)
 Lit with bloom:
-![Lit Bloom Image](litlightsbloom.png)
+![Lit Bloom Image](Example%20Images/litlightsbloom.png)
 
 
 
@@ -107,7 +107,7 @@ map.geoMaterials["GlowlessLight"] = {
 I tried to match the default `InterscopeConcrete` shader as much as possible, but I removed the lightmap to fix the "corruption". ~~This way of doing it also removes the ability to color the material, but I might try to find a way to fix that later.~~ Added `"DIFFUSE"` to the "FixedConcrete" material which allows it to be colored again. :)
 
 Comparison:
-![Concrete Comparison Image](coloredconcrete.png)
+![Concrete Comparison Image](Example%20Images/coloredconcrete.png)
 
 
 Material on the left:
@@ -136,9 +136,9 @@ map.geoMaterials["DirtMat"] = {
   shaderKeywords: ["DIFFUSE", "DIRT", "FOG", "REFLECTION_PROBE_BOX_PROJECTION"]
 }
 ```
-![Wood Image](wood.png)
-![Wood Plank](wood%20plank.png)
-![Stone/Rock](stone%20rock.png)
+![Wood Image](Example%20Images/wood.png)
+![Wood Plank](Example%20Images/wood%20plank.png)
+![Stone/Rock](Example%20Images/stone%20rock.png)
 
 ## Blurry Metal
 
@@ -161,7 +161,7 @@ map.geoMaterials["MetalMat1"] = {
 }
 ```
 This screenshot was taken from a different angle to better show the reflection.
-![Blurry Metal Image](blurrymetal.png)
+![Blurry Metal Image](Example%20Images/blurrymetal.png)
 
 ## Shiny Metal
 
@@ -183,7 +183,7 @@ map.geoMaterials["MetalMat2"] = {
    ]
 }
 ```
-![Shiny Metal Image](shinymetal.png)
+![Shiny Metal Image](Example%20Images/shinymetal.png)
 
 ## Crystal/Glass
 ```typescript
@@ -195,10 +195,10 @@ map.geoMaterials["CrystalMat"] = {
 };
 ```
 Unlit:
-![Crystal Image](crystal.png)
-![Crystal Image](crystalunlit.png)
+![Crystal Image](Example%20Images/crystal.png)
+![Crystal Image](Example%20Images/crystalunlit.png)
 Lit:
-![Crystal Lit](crystallit.png) 
+![Crystal Lit](Example%20Images/crystallit.png) 
 
 ## Fog Light
 Light dissolves in fog, the bloom from `TubeBloomPrePassLight` component is still visible though. Can also be used without being lit to hide some parts of something in the fog, as nothing behind the geo in the fog will be visible.
@@ -218,7 +218,7 @@ components.BloomFogEnvironment = {
 }
 ```
 
-![Fog Image](foglight.png)
+![Fog Image](Example%20Images/foglight.png)
 
 ## Grid/Swirly Circle/Swirly Ball
 The grid texture this material uses is the same texture used for mirrors, it's just usually a little hard to see on mirrors because of the reflective nature of a mirror. (also most of the base game mirrors have the texture scaled super tiny)
@@ -232,7 +232,7 @@ map.geoMaterials["GridMat"] = {
   shaderKeywords: ["ENABLE_DIRT"]
 }
 ```
-![Grid Image](grid.png)
+![Grid Image](Example%20Images/grid.png)
 
 ## Invisible
 This material is invisible or does not render, or is broken because it doesn't like instancing or something idk. It's a great way to get some collision without using an unlit transparent light.
@@ -246,7 +246,7 @@ map.geoMaterials["InvisMat"] = {
   shaderKeywords: ["INSTANCING_ON"]
 }
 ```
-![Invisible Image](invis.png)
+![Invisible Image](Example%20Images/invis.png)
 
 ## Slightly Reflective
 This material has a VERY subtle reflection to it.
@@ -265,7 +265,7 @@ map.geoMaterials["ReflectMat1"] = {
    ]
 }
 ```
-![Slightly Reflective Image](slightreflection.png)
+![Slightly Reflective Image](Example%20Images/slightreflection.png)
 
 ## Blurry Mirror
 Not a true mirror, uses the env's reflection probes.
@@ -286,7 +286,7 @@ map.geoMaterials["ReflectMat2"] = {
    ]
 }
 ```
-![Blurry Mirror Image](blurreflection.png)
+![Blurry Mirror Image](Example%20Images/blurreflection.png)
 
 ## Shiny Mirror
 Not a true mirror, uses the env's reflection probes.
@@ -307,5 +307,5 @@ map.geoMaterials["ReflectMat3"] = {
    ]
 }
 ```
-![Shiny Mirror Image](shinyreflection.png)
+![Shiny Mirror Image](Example%20Images/shinyreflection.png)
 
