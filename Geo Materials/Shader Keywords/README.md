@@ -2,6 +2,7 @@
 - Here is where I will list information regarding what I figure out about shader keywords as I mess around with them over time.
 - I will list keywords found inside Chroma on this page. (For a larger, more-likely-to-not-work list, go [here](Unverified%20Keywords/README.md))
 - The shader names I will use are the shader names from Chroma, but I have provided a list of shaders that each Chroma shader uses in case they are cross-compatible.
+- If I didn't list a shader, I did not find any keywords for that shader.
 
 ### Stuff to keep in mind
 - I have not tested every keyword listed here.
@@ -25,7 +26,6 @@ Here is a list of what shader each Chroma shader uses:
 - [OpaqueLight](README.md#OpaqueNeonLight)
 - [TransparentLight](README.md#TransparentNeonLight)
 - [BaseWater](README.md#WaterLit)
-- [Mirror](README.md#Mirror)
 
 
 ## Standard
@@ -43,7 +43,3 @@ Added in update 1.30:
 
 ## BaseWater
 `"FOG", "HEIGHT_FOG", "INVERT_RIMLIGHT", "MASK_RED_IS_ALPHA", "NOISE_DITHERING", "NORMAL_MAP", "REFLECTION_PROBE", "REFLECTION_PROBE_BOX_PROJECTION", "_DECALBLEND_ALPHABLEND", "_DISSOLVEAXIS_LOCALX", "_EMISSIONCOLORTYPE_FLAT", "_EMISSIONTEXTURE_NONE", "_RIMLIGHT_NONE", "_ROTATE_UV_NONE", "_VERTEXMODE_NONE", "_WHITEBOOSTTYPE_NONE", "_ZWRITE_ON"`
-
-
-## Mirror
-I didn't find any for this one
